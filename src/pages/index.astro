@@ -1,4 +1,6 @@
 ---
+import { Image } from 'astro:assets';
+
 ---
 <html lang="en">
 <head>
@@ -8,32 +10,38 @@
 	<meta name="generator" content={Astro.generator} />
 	<title>Create ROS Project</title>
 	<script is:inline src="https://cdn.tailwindcss.com"></script>
+	<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+
 </head>
 <body>
 
-<section class="bg-gradient-to-br from-[#14243e] to-[#253858] text-white h-[70vh] flex items-center justify-center"> <div class="container mx-auto py-20 text-center">
+<section class="bg-gradient-to-br from-black via-gray-950 to-black text-white h-[70vh] flex items-center justify-center"> <div class="container mx-auto py-20 text-center">
 
-	<h1 class="text-6xl font-bold mb-4"> Create ROS Project </h1>
-	<p class="text-lg text-gray-300 mb-8">
+	<h1 class="text-7xl font-bold mb-4"> Create ROS Project </h1>
+	<p class="text-xl text-gray-400 mb-8">
 		Start a ROS robotics projects with one command in seconds
 	</p>
-	<button class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-3 px-8 rounded-lg">
+	<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg">
 		Try Beta
 	</button>
 
 </div>
 </section>
 
-<section class="bg-gray-100 py-20">
+<section class=" bg-gradient-to-br from-gray-200 via-white to-gray-200 py-20">
 	<div class="container mx-auto">
 		<h2 class="text-4xl font-bold text-center text-black mb-8">Features</h2>
 		<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
 			<div class="bg-white p-6 rounded-lg shadow-md">
 				<h3 class="text-2xl font-semibold mb-3">One Line</h3>
+
 				<p class="text-gray-700">
-					You don’t need to sort through the list of different ROS distributions. CRP will tell you what’s available for your machine and install for you.
+					You don’t need to sort through the list of different ROS distributions anymore. CRP will do for you.
 				</p>
+
+				<img src="/images/feature_1.png" alt="image lah" class="my-5"/>
+
 			</div>
 
 			<div class="bg-white p-6 rounded-lg shadow-md">
@@ -41,13 +49,19 @@
 				<p class="text-gray-700">
 					Start with a basic structure or choose from a variety of templates to accelerate your ROS development.
 				</p>
+
+				<img src="/images/feature_2.png" alt="image lah" class="my-5"/>
+
 			</div>
 
 			<div class="bg-white p-6 rounded-lg shadow-md">
-				<h3 class="text-2xl font-semibold mb-3">Collaborative</h3>
+				<h3 class="text-2xl font-semibold mb-3">Cross-platform</h3>
 				<p class="text-gray-700">
 					Work seamlessly with your team on ROS projects, sharing workspace environments and code.
 				</p>
+
+				<img src="/images/feature_3.png" alt="image lah" class="my-5"/>
+
 			</div>
 
 		</div>
@@ -94,9 +108,9 @@
 </section>
 
 
-<section class="bg-blue-600 from-[#253858] to-[#38527a]  py-20">
+<section class="bg-black py-20">
 	<div class="container mx-auto">
-		<h2 class="text-4xl font-bold text-center text-white mb-8">Try Beta Now</h2>
+		<h2 class="text-4xl font-extrabold text-center text-white mb-8">Try Beta Now</h2>
 
 		<div class="bg-white p-8 rounded-lg shadow-lg">
 			<form class="mb-4">
@@ -130,7 +144,7 @@
 				</div>
 
 				<div class="text-center">
-					<button class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-3 px-8 rounded-lg" type="submit">Submit</button>
+					<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg" type="submit">Submit</button>
 				</div>
 			</form>
 		</div>
@@ -138,4 +152,17 @@
 	</div>
 </section>
 </body>
+
+<footer>
+
+</footer>
+
+
+
+
+<style>
+	body {
+		font-family: 'Inter', sans-serif;
+	}
+</style>
 </html>
