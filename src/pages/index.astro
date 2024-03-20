@@ -1,94 +1,116 @@
 ---
-
+import { Fragment } from 'astro/components';
 ---
-
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Create React Project</title>
-	</head>
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	<meta name="viewport" content="width=device-width" />
+	<meta name="generator" content={Astro.generator} />
+	<title>Create ROS Project</title>
+	<script is:inline src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
 
-	<body class="flex flex-col min-h-screen">
+<section class="bg-gradient-to-br from-[#14243e] to-[#253858] text-white">
+	<div class="container mx-auto py-20 flex flex-col items-center">
 
-		<section class="flex flex-col p-10 w-full h-[70vh] justify-center bg-[#14243e] text-white">
-			<div class="mx-auto">
-				<h1 class="text-7xl font-bold text-white"> Create ROS Project </h1>
-				<p class="text-xl text-gray-300 pt-2 my-2">Start a ROS robotics projects with one command in seconds</p>
-				<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 w-40 rounded-xl mt-4 my-4" >Signup for Beta</button>
+		<h1 class="text-6xl font-bold text-center mb-4"> Create ROS Project </h1>
+		<p class="text-lg text-gray-300 text-center mb-8">
+			Start a ROS robotics projects with one command in seconds
+		</p>
+		<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg">
+			Signup for Beta
+		</button>
+
+	</div>
+</section>
+
+<section class="bg-gray-100 py-20">
+	<div class="container mx-auto">
+		<h2 class="text-4xl font-bold text-center text-black mb-8">Features</h2>
+		<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+			<div class="bg-white p-6 rounded-lg shadow-md">
+				<h3 class="text-2xl font-semibold mb-3">One Line</h3>
+				<p class="text-gray-700">
+					You don’t need to sort through the list of different ROS distributions. CRP will tell you what’s available for your machine and install for you.
+				</p>
 			</div>
-		</section>
 
-		<section class="flex flex-col p-10 w-full h-[70vh] justify-center bg-[#efefef] text-black">
-			<div class="mx-auto">
-
-		<div class="flex flex-row ">
-			<div class="flex flex-col max-w-sm rounded overflow-hidden py-1 px-3">
-				<h1 class="font-bold text-3xl pb-3"> One Line</h1>
-				<p class="text-gray-600 ">You don’t need to sort though the list of different ROS distributions. CRP will tell you what’s available for your machine and install for you.</p>
+			<div class="bg-white p-6 rounded-lg shadow-md">
+				<h3 class="text-2xl font-semibold mb-3">Templates</h3>
+				<p class="text-gray-700">
+					Start with a basic structure or choose from a variety of templates to accelerate your ROS development.
+				</p>
 			</div>
 
-			<div class="flex flex-col max-w-sm rounded overflow-hidden py-1 px-2">
-				<h1 class="font-bold text-3xl pb-3"> Templates</h1>
-				<p class="text-gray-600 ">You don’t need to sort though the list of different ROS distributions. CRP will tell you what’s available for your machine and install for you.</p>
+			<div class="bg-white p-6 rounded-lg shadow-md">
+				<h3 class="text-2xl font-semibold mb-3">Collaborative</h3>
+				<p class="text-gray-700">
+					Work seamlessly with your team on ROS projects, sharing workspace environments and code.
+				</p>
 			</div>
-
-			<div class="flex flex-col max-w-sm rounded overflow-hidden py-1 px-2">
-				<h1 class="font-bold text-3xl pb-3"> Collaborative</h1>
-				<p class="text-gray-600">You don’t need to sort though the list of different ROS distributions. CRP will tell you what’s available for your machine and install for you.</p>
-			</div>
-		</div>
-			</div>
-	</section>
-
-		<section class="flex flex-col p-10 w-full h-[70vh] justify-center bg-neutral-950 text-white">
-			<div class="mx-auto">
-
-			<h1 class="text-5xl font-bold"> Easy as 1, 2, 3</h1>
-
-		<div class="flex flex-row gap-3">
-
-		<div class="max-w-sm rounded overflow-hidden my-10">
-			<div class="px-6 py-4">
-				<div class="font-bold text-xl mb-2">1. Install</div>
-			</div>
-			<img class="w-full" src="https://cln.sh/ck25YdFT/download" alt="Sunset in the mountains">
-		</div>
-
-		<div class="max-w-sm rounded overflow-hidden my-10">
-			<div class="px-6 py-4">
-				<div class="font-bold text-xl mb-2">2. Run</div>
-			</div>
-			<img class="w-full" src="https://cln.sh/ck25YdFT/download" alt="Sunset in the mountains">
-		</div>
-
-		<div class="max-w-sm rounded overflow-hidden my-10">
-			<div class="px-6 py-4">
-				<div class="font-bold text-xl mb-2">3. Build</div>
-			</div>
-			<img class="w-full" src="https://cln.sh/ck25YdFT/download" alt="Sunset in the mountains">
-		</div>
 
 		</div>
+	</div>
+</section>
+
+<section class="bg-white py-20">
+	<div class="container mx-auto">
+		<h2 class="text-4xl font-bold text-center text-black mb-8">Easy as 1, 2, 3</h2>
+
+		<div class="flex flex-col items-start justify-center gap-12">
+
+			<div class="flex items-center">
+				<span class="text-6xl font-bold text-blue-500 mr-4 flex-shrink-0">1.</span>
+
+				<div>
+					<h3 class="text-2xl font-semibold mb-3">Install</h3>
+					<p class="text-gray-700">Install CRP quickly and easily with a single command line instruction.</p>
+				</div>
+
 			</div>
-	</section>
+
+			<div class="flex items-center">
+				<span class="text-6xl font-bold text-blue-500 mr-4 flex-shrink-0">2.</span>
+
+				<div>
+					<h3 class="text-2xl font-semibold mb-3">Build</h3>
+					<p class="text-gray-700">Install CRP quickly and easily with a single command line instruction.</p>
+				</div>
+
+			</div>
+
+			<div class="flex items-center">
+				<span class="text-6xl font-bold text-blue-500 mr-4 flex-shrink-0">3.</span>
+
+				<div>
+					<h3 class="text-2xl font-semibold mb-3">Test</h3>
+					<p class="text-gray-700">Install CRP quickly and easily with a single command line instruction.</p>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
 
 
-	<section class="flex flex-col p-10 mx-auto w-full md:w-1/2 lg:w-2/3 h-[70vh] justify-center"">
-		<h1 class="text-5xl font-bold"> Try Beta Now </h1>
-		<div class="container mx-auto p-6">
-			<form class="rounded px-8 pt-6 pb-8 mb-4">
-				<div class="grid grid-cols-2 gap-4 mb-4">
+<section class="bg-gradient-to-br from-[#253858] to-[#38527a]  py-20">
+	<div class="container mx-auto">
+		<h2 class="text-4xl font-bold text-center text-white mb-8">Try Beta Now</h2>
+
+		<div class="bg-white p-8 rounded-lg shadow-lg">
+			<form class="mb-4">
+				<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
 					<div>
-						<label class="block text-gray-700 text-sm font-bold mb-2" for="firstName">
+						<label class="block text-gray-700 text-base font-medium mb-2" for="firstName">
 							First Name
 						</label>
 						<input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="firstName" type="text" placeholder="First Name">
 					</div>
 					<div>
-						<label class="block text-gray-700 text-sm font-bold mb-2" for="lastName">
+						<label class="block text-gray-700 text-base font-medium mb-2" for="lastName">
 							Last Name
 						</label>
 						<input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="lastName" type="text" placeholder="Last Name">
@@ -96,32 +118,26 @@
 				</div>
 
 				<div class="mb-4">
-					<label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+					<label class="block text-gray-700 text-base font-medium mb-2" for="email">
 						Email
 					</label>
 					<input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Email">
 				</div>
 
 				<div class="mb-6">
-					<label class="block text-gray-700 text-sm font-bold mb-2" for="message">
+					<label class="block text-gray-700 text-base font-medium mb-2" for="message">
 						Questions and Requests
 					</label>
 					<textarea class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" rows="5" placeholder="Type your message here"></textarea>
 				</div>
 
-				<div class="flex items-center justify-end">
-					<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
-						Submit
-					</button>
+				<div class="text-center">
+					<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg" type="submit">Submit</button>
 				</div>
 			</form>
 		</div>
-	</section>
-	</body>
 
+	</div>
+</section>
+</body>
 </html>
-
-<style>
-
-
-</style>

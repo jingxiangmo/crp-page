@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8e72b31d-7d29-46e9-a309-9113546cfbde" name="Changes" comment="Basic background">
+    <list default="true" id="8e72b31d-7d29-46e9-a309-9113546cfbde" name="Changes" comment="Fix color">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/extensions.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vscode/launch.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.astro" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.astro" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +54,7 @@
       <updated>1710925287091</updated>
       <workItem from="1710925288227" duration="80000" />
       <workItem from="1710925402256" duration="1573000" />
-      <workItem from="1710926986349" duration="5647000" />
+      <workItem from="1710926986349" duration="6353000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -74,7 +72,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710932496861</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Fix color">
+      <option name="closed" value="true" />
+      <created>1710932803546</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1710932803546</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -89,6 +95,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Basic background" />
-    <option name="LAST_COMMIT_MESSAGE" value="Basic background" />
+    <MESSAGE value="Fix color" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix color" />
   </component>
 </project>
