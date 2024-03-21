@@ -1,171 +1,135 @@
 ---
-
+import Layout from '../layouts/Layout.astro';
 ---
-<html lang="en">
-<head>
-	<meta charset="utf-8" />
-	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-	<meta name="viewport" content="width=device-width" />
-	<meta name="generator" content={Astro.generator} />
-	<title>Create ROS Project</title>
-	<script is:inline src="https://cdn.tailwindcss.com"></script>
-	<link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
 
-</head>
+<Layout title="Create ROS Project">
 
-<body class="antialiased bg-gray-50">
 
-<section class="h-[70vh] flex items-center justify-center">
-	<div class="container mx-auto py-20 text-center">
+	<section class="h-[70vh] flex items-center justify-center">
+		<div class="container mx-auto py-20 text-center">
 
-	<h1 class="text-7xl font-bold mb-4"> Create ROS Project </h1>
-	<p class="text-xl text-gray-400 mb-8">
-		Start a ROS robotics projects with one command in seconds
-	</p>
-	<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg">
-		Try Beta
-	</button>
+			<h1 class="text-7xl font-bold mb-4"> Create ROS Project </h1>
 
-</div>
-</section>
+			<p class="text-xl text-gray-400 mb-8">
+				Start a ROS robotics projects with one command in seconds
+			</p>
 
-<section class=" bg-gradient-to-br from-gray-200 via-white to-gray-200 py-20">
-	<div class="container mx-auto">
-		<h2 class="text-4xl font-bold text-center text-black mb-8">Features</h2>
-		<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-
-			<div class="bg-white p-6 rounded-lg shadow-md">
-				<h3 class="text-2xl font-semibold mb-3">One Line</h3>
-
-				<p class="text-gray-700">
-					You don’t need to sort through the list of different ROS distributions anymore. CRP will do for you.
-				</p>
-
-				<img src="/images/feature_1.png" alt="image lah" class="my-5"/>
-
-			</div>
-
-			<div class="bg-white p-6 rounded-lg shadow-md">
-				<h3 class="text-2xl font-semibold mb-3">Templates</h3>
-				<p class="text-gray-700">
-					Start with a basic structure or choose from a variety of templates to accelerate your ROS development.
-				</p>
-
-				<img src="/images/feature_2.png" alt="image lah" class="my-5"/>
-
-			</div>
-
-			<div class="bg-white p-6 rounded-lg shadow-md">
-				<h3 class="text-2xl font-semibold mb-3">Cross-platform</h3>
-				<p class="text-gray-700">
-					Work seamlessly with your team on ROS projects, sharing workspace environments and code.
-				</p>
-
-				<img src="/images/feature_3.png" alt="image lah" class="my-5"/>
-
-			</div>
-
+			<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg">
+				Try Beta
+			</button>
 		</div>
-	</div>
-</section>
+	</section>
 
-<section class="bg-white py-20">
-	<div class="container mx-auto">
-		<h2 class="text-4xl font-bold text-center text-black mb-8">Easy as 1, 2, 3</h2>
+	<section class=" bg-gradient-to-br from-gray-200 via-white to-gray-200 py-20">
+		<div class="container mx-auto">
+			<h2 class="text-4xl font-bold text-center text-black mb-8">Features</h2>
 
-		<div class="flex flex-col items-start justify-center gap-12 mx-10">
+			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
-			<div class="flex items-center">
-				<span class="text-6xl font-bold text-blue-500 mr-4 flex-shrink-0">1.</span>
+				<div class="bg-white p-6 rounded-lg shadow-md">
+					<h3 class="text-2xl font-semibold mb-3">One Line</h3>
 
-				<div>
-					<h3 class="text-2xl font-semibold mb-3">Install</h3>
-					<p class="text-gray-700">Install CRP quickly and easily with a single command line instruction.</p>
+					<p class="text-gray-700">
+						You don’t need to sort through the list of different ROS distributions anymore. CRP will do for you.
+					</p>
+
+					<img src="/images/feature_1.png" alt="image lah" class="my-5"/>
+
 				</div>
 
-			</div>
+				<div class="bg-white p-6 rounded-lg shadow-md">
+					<h3 class="text-2xl font-semibold mb-3">Templates</h3>
+					<p class="text-gray-700">
+						Start with a basic structure or choose from a variety of templates to accelerate your ROS development.
+					</p>
 
-			<div class="flex items-center">
-				<span class="text-6xl font-bold text-blue-500 mr-4 flex-shrink-0">2.</span>
+					<img src="/images/feature_2.png" alt="image lah" class="my-5"/>
 
-				<div>
-					<h3 class="text-2xl font-semibold mb-3">Build</h3>
-					<p class="text-gray-700">Install CRP quickly and easily with a single command line instruction.</p>
 				</div>
 
-			</div>
+				<div class="bg-white p-6 rounded-lg shadow-md">
+					<h3 class="text-2xl font-semibold mb-3">Cross-platform</h3>
+					<p class="text-gray-700">
+						Work seamlessly with your team on ROS projects, sharing workspace environments and code.
+					</p>
 
-			<div class="flex items-center">
-				<span class="text-6xl font-bold text-blue-500 mr-4 flex-shrink-0">3.</span>
+					<img src="/images/feature_3.png" alt="image lah" class="my-5"/>
 
-				<div>
-					<h3 class="text-2xl font-semibold mb-3">Test</h3>
-					<p class="text-gray-700">Install CRP quickly and easily with a single command line instruction.</p>
 				</div>
 
 			</div>
 		</div>
-	</div>
-</section>
+	</section>
 
+	<section class="bg-white py-20">
+		<div class="container mx-auto">
+			<h2 class="text-4xl font-bold text-center text-black mb-8">Easy as 1, 2, 3</h2>
 
-<section class="bg-black py-20">
-	<div class="container mx-auto">
-		<h2 class="text-4xl font-extrabold text-center text-white mb-8">Try Beta Now</h2>
+			<div class="flex flex-col items-start justify-center gap-12 mx-10">
 
-		<div class="bg-white p-8 rounded-lg shadow-lg flex justify-center">
-			<form class="mb-4 w-2/3">
-				<div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+				<div class="flex items-center">
+					<span class="text-6xl font-bold text-blue-500 mr-4 flex-shrink-0">1.</span>
+
 					<div>
-						<label class="block text-gray-700 text-base font-medium mb-2" for="firstName">
-							First Name
-						</label>
-						<input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="firstName" type="text" placeholder="First Name">
+						<h3 class="text-2xl font-semibold mb-3">Install</h3>
+						<p class="text-gray-700">Install CRP quickly and easily with a single command line instruction.</p>
 					</div>
+
+				</div>
+
+				<div class="flex items-center">
+					<span class="text-6xl font-bold text-blue-500 mr-4 flex-shrink-0">2.</span>
+
 					<div>
-						<label class="block text-gray-700 text-base font-medium mb-2" for="lastName">
-							Last Name
-						</label>
-						<input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="lastName" type="text" placeholder="Last Name">
+						<h3 class="text-2xl font-semibold mb-3">Build</h3>
+						<p class="text-gray-700">Install CRP quickly and easily with a single command line instruction.</p>
 					</div>
+
 				</div>
 
-				<div class="mb-4">
-					<label class="block text-gray-700 text-base font-medium mb-2" for="email">
-						Email
-					</label>
-					<input class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Email">
-				</div>
+				<div class="flex items-center">
+					<span class="text-6xl font-bold text-blue-500 mr-4 flex-shrink-0">3.</span>
 
-				<div class="mb-6">
-					<label class="block text-gray-700 text-base font-medium mb-2" for="message">
-						Questions and Requests
-					</label>
-					<textarea class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="message" rows="5" placeholder="Type your message here"></textarea>
-				</div>
+					<div>
+						<h3 class="text-2xl font-semibold mb-3">Test</h3>
+						<p class="text-gray-700">Install CRP quickly and easily with a single command line instruction.</p>
+					</div>
 
-				<div class="text-center">
-					<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg" type="submit">Submit</button>
 				</div>
-			</form>
+			</div>
 		</div>
+	</section>
+	<section class="py-20 bg-gray-900 text-white">
+		<div class="container mx-auto px-4">
+			<h2 class="text-4xl font-bold text-center mb-12">Try Beta Now</h2>
+			<div class="flex justify-center">
+				<div class="w-full max-w-xl">
+					<form>
+						<div class="mb-4">
+							<input type="text" class="w-full p-3 rounded-lg" placeholder="First Name" />
+						</div>
+						<div class="mb-4">
+							<input type="text" class="w-full p-3 rounded-lg" placeholder="Last Name" />
+						</div>
+						<div class="mb-4">
+							<input type="email" class="w-full p-3 rounded-lg" placeholder="Email" />
+						</div>
+						<div class="mb-6">
+							<textarea rows="5" class="w-full p-3 rounded-lg" placeholder="Questions and Requests"></textarea>
+						</div>
+						<div class="text-center">
+							<button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg transition duration-300">Submit</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
 
-	</div>
-</section>
-</body>
+	<footer class="py-8 bg-gray-100 text-gray-600">
+		<div class="container mx-auto text-center">
+			Made with ❤️ by JXM and Sasha
+		</div>
+	</footer>
 
-<footer class="text-gray-600 body-font">
-	<div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
-		<p class="text-sm text-gray-500 sm:py-2 sm:mt-0 mt-4">Made with ❤️ by Sasha and JXM</p>
-	</div>
-</footer>
-
-
-
-
-<style>
-	body {
-		font-family: 'Inter', sans-serif;
-	}
-</style>
-</html>
+</Layout>
