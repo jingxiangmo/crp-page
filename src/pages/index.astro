@@ -14,15 +14,15 @@ import Layout from '../layouts/Layout.astro';
 				Start a ROS robotics projects with one command in seconds
 			</p>
 
-			<button>
+			<button id="tryBetaButton">
 				Try Beta
 			</button>
 		</div>
 	</section>
 
 
-	<section class="h-[70vh] flex justify-center">
-
+	<section class="h-[75vh] flex justify-center bg-white p-6">
+		<img src="https://cln.sh/xtYr5V8D/download" alt="fuck alt" class="rounded-3xl shadow-xl"/>
 	</section>
 
 	<section class=" bg-[#FAFAFA] py-20">
@@ -107,11 +107,11 @@ import Layout from '../layouts/Layout.astro';
 
 
 	<section class="py-20 bg-black">
-		<div class="container mx-auto px-4">
-			<h2 class="text-5xl font-bold text-center mb-12 text-white">Try Beta Now</h2>
+		<div class="container mx-auto px-2">
+			<h2 class="!text-white text-5xl font-bold text-center mb-12 ">Try Beta Now</h2>
 			<div class="flex justify-center">
 				<div class="w-full max-w-xl">
-					<form>
+					<form id="betaForm" >
 						<div class="mb-4">
 							<input type="text" class="w-full p-3 rounded-lg" placeholder="First Name" />
 						</div>
@@ -138,6 +138,18 @@ import Layout from '../layouts/Layout.astro';
 			Made with ❤️ by <a href="https://jingxiangmo.com">JXM</a> and <a href="https://www.sasharesume.com">Sasha</a>
 		</div>
 	</footer>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', (event) => {
+			const button = document.getElementById('tryBetaButton');
+			const formSection = document.getElementById('betaForm');
+
+			button.addEventListener('click', function(e) {
+				e.preventDefault();
+				formSection.scrollIntoView({ behavior: 'smooth' });
+			});
+		});
+	</script>
 
 </Layout>
 
