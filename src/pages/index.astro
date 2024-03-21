@@ -140,16 +140,19 @@ import Layout from '../layouts/Layout.astro';
 	</footer>
 
 	<script>
-		document.addEventListener('DOMContentLoaded', (event) => {
+		document.addEventListener('DOMContentLoaded', () => {
 			const button = document.getElementById('tryBetaButton');
 			const formSection = document.getElementById('betaForm');
 
-			button.addEventListener('click', function(e) {
-				e.preventDefault();
-				formSection.scrollIntoView({ behavior: 'smooth' });
-			});
+			if (button && formSection) {
+				button.addEventListener('click', function(e) {
+					e.preventDefault();
+					formSection.scrollIntoView({ behavior: 'smooth' });
+				});
+			}
 		});
 	</script>
+
 
 </Layout>
 
