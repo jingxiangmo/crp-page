@@ -14,19 +14,24 @@ import Layout from '../layouts/Layout.astro';
 				Start a ROS robotics projects with one command in seconds
 			</p>
 
-			<button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-lg">
+			<button>
 				Try Beta
 			</button>
 		</div>
 	</section>
 
-	<section class=" bg-gradient-to-br from-gray-200 via-white to-gray-200 py-20">
+
+	<section class="h-[70vh] flex justify-center">
+
+	</section>
+
+	<section class=" bg-[#FAFAFA] py-20">
 		<div class="container mx-auto">
-			<h2 class="text-4xl font-bold text-center text-black mb-8">Features</h2>
+			<h2 class="text-5xl font-bold text-center mb-8">Features</h2>
 
 			<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
 
-				<div class="bg-white p-6 rounded-lg shadow-md">
+				<div class="bg-white p-6 rounded-xl">
 					<h3 class="text-2xl font-semibold mb-3">One Line</h3>
 
 					<p class="text-gray-700">
@@ -37,7 +42,7 @@ import Layout from '../layouts/Layout.astro';
 
 				</div>
 
-				<div class="bg-white p-6 rounded-lg shadow-md">
+				<div class="bg-white p-6 rounded-xl">
 					<h3 class="text-2xl font-semibold mb-3">Templates</h3>
 					<p class="text-gray-700">
 						Start with a basic structure or choose from a variety of templates to accelerate your ROS development.
@@ -47,7 +52,7 @@ import Layout from '../layouts/Layout.astro';
 
 				</div>
 
-				<div class="bg-white p-6 rounded-lg shadow-md">
+				<div class="bg-white p-6 rounded-xl">
 					<h3 class="text-2xl font-semibold mb-3">Cross-platform</h3>
 					<p class="text-gray-700">
 						Work seamlessly with your team on ROS projects, sharing workspace environments and code.
@@ -63,7 +68,7 @@ import Layout from '../layouts/Layout.astro';
 
 	<section class="bg-white py-20">
 		<div class="container mx-auto">
-			<h2 class="text-4xl font-bold text-center text-black mb-8">Easy as 1, 2, 3</h2>
+			<h2 class="text-5xl font-bold text-center mb-8">Easy as 1, 2, 3</h2>
 
 			<div class="flex flex-col items-start justify-center gap-12 mx-10">
 
@@ -99,9 +104,11 @@ import Layout from '../layouts/Layout.astro';
 			</div>
 		</div>
 	</section>
-	<section class="py-20 bg-gray-900 text-white">
+
+
+	<section class="py-20 bg-black">
 		<div class="container mx-auto px-4">
-			<h2 class="text-4xl font-bold text-center mb-12">Try Beta Now</h2>
+			<h2 class="text-5xl font-bold text-center mb-12 text-white">Try Beta Now</h2>
 			<div class="flex justify-center">
 				<div class="w-full max-w-xl">
 					<form>
@@ -118,7 +125,7 @@ import Layout from '../layouts/Layout.astro';
 							<textarea rows="5" class="w-full p-3 rounded-lg" placeholder="Questions and Requests"></textarea>
 						</div>
 						<div class="text-center">
-							<button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg transition duration-300">Submit</button>
+							<button type="submit">Submit</button>
 						</div>
 					</form>
 				</div>
@@ -128,8 +135,32 @@ import Layout from '../layouts/Layout.astro';
 
 	<footer class="py-8 bg-gray-100 text-gray-600">
 		<div class="container mx-auto text-center">
-			Made with ❤️ by JXM and Sasha
+			Made with ❤️ by <a href="https://jingxiangmo.com">JXM</a> and <a href="https://www.sasharesume.com">Sasha</a>
 		</div>
 	</footer>
 
 </Layout>
+
+<style>
+	a {
+		color: #2997ff;
+		text-decoration: underline;
+	}
+
+	h1 {
+		color: #242424;
+	}
+
+	h2 {
+		color: #242424;
+	}
+
+	p {
+		color: #808080;
+	}
+
+	button {
+		@apply bg-[#007AFF] hover:bg-[#0A84FF] text-white font-bold py-3 px-10 rounded-lg;
+	}
+
+</style>
